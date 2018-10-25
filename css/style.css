@@ -10,7 +10,22 @@ background-repeat:repeat;
 background-size: 350px 350px;
 }
 
+#vue {
+  font-size: 1rem; }
 
+.show-focus-outlines button:focus,
+.show-focus-outlines [tabindex]:focus {
+  outline-color: yellow;
+  outline-style: solid;
+  outline-width: 0.3rem; }
+
+body:not(.show-focus-outlines) button:focus,
+body:not(.show-focus-outlines) [tabindex]:focus {
+  outline: none; }
+
+  
+.footer, .footer-buttons, .footer-audio {
+  z-index: 9998; }
 
 
   .footer-buttons {
@@ -36,7 +51,7 @@ background-size: 350px 350px;
     cursor: pointer;
     font-size: 1.25rem;
     text-align: center;
-    background: #333333;
+    background: #222222;
     color: #ffffff;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out; }
   
@@ -60,3 +75,129 @@ background-size: 350px 350px;
     100% {
       transform: translate(-50%, -50%);
       opacity: 1; } }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #222222;
+  color: #ffffff;
+  transform: translate3d(0, 0, 0) !important; }
+
+.footerHide {
+  bottom: 15px;
+  transform: translateY(100%) !important; }
+
+.footer-transition {
+  transition: 0.5s ease-in-out;
+  transform: translate3d(0, 0, 0); }
+
+.menu {
+  height: 100%;
+  padding: 0.94rem 0; }
+
+.menuitem {
+  text-align: center; }
+
+.modal .link {
+  color: #626262;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+  transform: translate3d(0, 0, 0); }
+
+.modal .link:hover {
+  color: #b5b5b5; }
+
+.footer .link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s linear;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer; }
+
+.footer .link:hover {
+  color: #b5b5b5; }
+
+.footer-bg {
+  background: #343a40; }
+
+.footer-logo {
+  width: 12.5rem;
+  height: 100%;
+  transition: 0.2s linear; }
+
+.footer-logo:hover {
+  filter: brightness(70%); }
+
+.dark-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  z-index: 9998;
+  pointer-events: none;
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+@media screen and (max-width: 1600px) {
+  html, body {
+    font-size: 90%; } }
+
+@media screen and (max-width: 991px) {
+  html, body {
+    font-size: 70%; } 
+  .menu {
+    padding: 1rem 0; }
+  .menuitem {
+    padding: 0.5rem; }
+  .footer-buttons {
+    right: 3%;
+    width: 6rem;
+    height: 2.5rem; }
+  .footer-logo {
+    width: 12rem; }
+  .footer .link {
+    font-size: 1.25rem; }}
+
+@media screen and (orientation: portrait) {
+  .height1 {
+    width: 100%;
+    height: 60%; }
+  .height2 {
+    width: 100%;
+    height: 40%; } }
+
+@media screen and (orientation: landscape) {
+  .height1 {
+    height: 100%;
+    width: 66.6%; }
+  .height2 {
+    height: 100%;
+    width: 33.3%; } }
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .height1 {
+    width: 50%; }
+  .height2 {
+    width: 50%; }
+  .buttons-active {
+    top: 0.5rem !important; } }
+
+@media screen and (max-width: 991px) and (orientation: portrait) {
+  .video-section {
+    height: calc(90vh - 15px); }
+  .video-spacer1 {
+    height: 10vh; }
+  .buttons-active {
+    top: 1rem !important; } }
+
+/** info container only on mobile - not ipad ***/
+@media screen and (max-width: 720px) {
+  .info-container {
+    width: 96%;
+    opacity: 0;
+    padding: 1.0rem;
+    bottom: 10.5%;
+    margin-left: -3%; } }
