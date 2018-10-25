@@ -31,7 +31,6 @@ body:not(.show-focus-outlines) [tabindex]:focus {
   font-weight: 500;
   padding:0.4rem;
   padding-left:1rem;
-  margin-right: 0.4rem;
 
 }
 
@@ -44,9 +43,9 @@ vertical-align:middle;
 } 
 
 .navbar-nav{
+  display:table;
+  width:100%;
   font-weight: 500;
-  Height: 100%;
-  width: 100%;
   text-align:center;
   vertical-align:middle;
 
@@ -55,14 +54,12 @@ vertical-align:middle;
 }
 
 .nav-item{
-  white-space: nowrap;
-  width:100%;
-  height:inherit;
+  display:table-cell;
+
   text-align:center;
   vertical-align:middle;
-  justify-content: space-around;
-  padding-top:0.4rem;
-  padding-bottom:0.4rem;
+  
+
   background-color:rgba(181, 208, 252, 0.6);
   margin: 0 0 0 0.2rem;
 
