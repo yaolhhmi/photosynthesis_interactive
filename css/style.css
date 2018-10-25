@@ -9,10 +9,8 @@ background-image: url(../assets/paper-texture.jpg);
 background-repeat:repeat;
 background-size: 400px 400px;
 background-color: #d7d7d7;
+font-size: 1rem;
 }
-
-#vue {
-  font-size: 1rem; }
 
 .show-focus-outlines button:focus,
 .show-focus-outlines [tabindex]:focus {
@@ -24,7 +22,60 @@ body:not(.show-focus-outlines) button:focus,
 body:not(.show-focus-outlines) [tabindex]:focus {
   outline: none; }
 
-  
+.navbar {
+  padding:0;
+}
+.navbar-brand{
+  line-height: 35px;
+  font-size: 22px;
+  font-weight: 500;
+  padding:0.4rem;
+  padding-left:1rem;
+  padding-right:1rem;
+
+}
+
+#navbarNav{
+  font-size: 18px;
+vertical-align:middle;
+display:flex;
+
+} 
+
+.navbar-nav{
+  line-height:1.7rem;
+  display: table;
+  width: 100%;
+  text-align:center;
+  vertical-align:middle;
+  background-color:rgba(181, 208, 252, 0.6);
+}
+
+.nav-item{
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+
+  padding:0.4rem;
+  border-left: 2.2px solid;
+  border-color:white;
+
+}
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse{
+
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
 .footer, .footer-buttons, .footer-audio {
   z-index: 9998; }
 
@@ -144,11 +195,18 @@ body:not(.show-focus-outlines) [tabindex]:focus {
 
 @media screen and (max-width: 1600px) {
   html, body {
-    font-size: 90%; } }
+    font-size: 90%; }
+    .nav-item{
+      font-size: 16px;
+    } 
+    .navbar-brand{
+      font-size: 19px;
+    }}
 
 @media screen and (max-width: 991px) {
   html, body {
     font-size: 70%; } 
+
   .menu {
     padding: 1rem 0; }
   .menuitem {

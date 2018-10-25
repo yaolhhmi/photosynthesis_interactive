@@ -12,6 +12,7 @@
 
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
+
 <body>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRC3MJ"
@@ -22,7 +23,42 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WRC3MJ');</script>
     <!-- End Google Tag Manager -->  
-  
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/tree.png" width="46" height="35" class="d-inline-block align-middle" alt="">Photosynthesis
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chemical Process</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plant Cells</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chloroplasts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Light Reactions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Calvin Cycle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Biosynthesis</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    
+
     <div class="non-modal">
             <canvas id="myCanvas"></canvas>
             <div class="mask"></div>
@@ -60,6 +96,7 @@
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/jquery.lettering.js"></script>
+<script src="js/vendor/popper.min.js"></script>
 <script src="js/vendor/bootstrap.bundle.min.js"></script>
 
 <script src="js/bundle.js"></script>
