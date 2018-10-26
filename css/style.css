@@ -28,13 +28,15 @@ body:not(.show-focus-outlines) [tabindex]:focus {
   -moz-box-shadow: 0px 2px 2px 0px rgba(107, 107, 107, 0.42);
   box-shadow: 0px 2px 2px 0px rgba(107, 107, 107, 0.42);
 }
+
 .navbar-brand{
- Height: 100%;
+  Height: 100%;
   font-size: 22px;
   font-weight: 500;
   padding:0.5rem;
   padding-left:1rem;
   margin-right: 0.4rem;
+  transition: 0.2s linear;
 
 }
 
@@ -61,6 +63,27 @@ body:not(.show-focus-outlines) [tabindex]:focus {
   padding-bottom:0.5rem;
   background-color:rgba(181, 208, 252, 0.6);
 }
+
+.nav-link{
+  transition: 0.2s linear;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: rgba(0, 164, 80, 1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(66, 129, 255, 1);
+}
+
 
 @media (min-width: 992px) {
   .nav-item{
@@ -95,11 +118,7 @@ body:not(.show-focus-outlines) [tabindex]:focus {
     height: 2rem;
     font-size: 0; }
   
-  .question {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+
   
   .footer-question {
     display: inline-block;
@@ -120,6 +139,7 @@ body:not(.show-focus-outlines) [tabindex]:focus {
   
   .footer-question:hover span {
     animation: 0.5s questionAnimation forwards; }
+    
   
   @keyframes questionAnimation {
     0% {
