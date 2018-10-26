@@ -48,7 +48,7 @@ vertical-align:middle;
 
 .navbar-nav{
   font-weight: 500;
-  Height: 100%;
+
   width: 100%;
   text-align:center;
   vertical-align:middle;
@@ -74,6 +74,19 @@ vertical-align:middle;
 .navbar-toggler{
   margin-right:1rem;
 }
+
+@media (min-width: 992px) {
+  .nav-item{
+    margin: 0 0 0 2px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-item{
+    margin: 0 0 2px 0;
+  }
+}
+
 
 .footer, .footer-buttons, .footer-audio {
   z-index: 9998; }
