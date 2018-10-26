@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,65 +15,77 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRC3MJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WRC3MJ');</script>
-    <!-- End Google Tag Manager -->  
+
+    <!-- Google Tag Manager
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRC3MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WRC3MJ');</script>
+    End Google Tag Manager -->
+    
+    <a href="#main " class="sr-only sr-only-focusable">Skip to main content</a>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="index.html">
             <img src="assets/tree.png" width="46" height="35" class="d-inline-block align-middle" alt="">Photosynthesis
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav text-center align-items-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chemical Process</a> 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Plant Cells</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chloroplasts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Light Reactions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Calvin Cycle</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Biosynthesis</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav text-center align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chemical Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plant Cells</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chloroplasts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Light Reactions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Calvin Cycle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Biosynthesis</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    
 
-    <div class="non-modal">
-            <canvas id="myCanvas"></canvas>
-            <div class="mask"></div>
+    <main id="main" tabindex="-1">
+        <div class="non-modal">
+            <div class="loading">
+                    <div class="loading-container">
+                            <div class="loading-text">Loading</div>
+                    </div>
+            </div>
+            <div class="container main-container"></div>
+        </div>
+    </main>
 
-    <div class="loading"></div>
+    <div class="modals displaynone">
 
-    <div class="container main-container"></div>
     </div>
 
-    <div class="footer-buttons">
+    <div class="footer-buttons" role="moreinfo">
         <div tabindex="1" class="footer-question"><span class="question">?</span></div>
     </div>
-    
-    <div class="footer">
+    </main>
+
+    <div class="footer" role="contentinfo">
         <div class="menu row">
             <div class="col-md"></div>
             <div class="menuitem col-md align-self-center">
@@ -86,20 +99,22 @@
             </div>
             <div class="menuitem col-md align-self-center">
                 <a class="link logo" href="https://www.hhmi.org/biointeractive" target="_blank">
-                    <img class="footer-logo" src="assets/biointeractive-logo.svg">
-                </a>                
+                    <img class="footer-logo" alt="Goto BioInteractive" src="assets/biointeractive-logo.svg">
+                </a>
             </div>
             <div class="col-md"></div>
         </div>
     </div>
 
 
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/jquery.lettering.js"></script>
-<script src="js/vendor/popper.min.js"></script>
-<script src="js/vendor/bootstrap.bundle.min.js"></script>
 
-<script src="js/bundle.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.lettering.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+    <script src="js/bundle.js"></script>
 
 </body>
+
 </html>
